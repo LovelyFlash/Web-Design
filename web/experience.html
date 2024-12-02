@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>王李超的个人主页 - 个人资料</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,20 +35,24 @@
         }
         .project-details {
             display: flex;
-            flex-direction: column;
-            gap: 15px; /* 每行文字间距 */
-            align-items: center; /* 内容右对齐 */
+            align-items: center;
+            gap: 20px;
         }
-        .project-details .line {
-            background-color: rgba(255, 255, 255, 0.2); /* 半透明背景 */
-            border-radius: 8px; /* 圆角效果 */
-            padding: 10px 15px; /* 内间距 */
-            color: hsl(0, 0%, 100%); /* 文字颜色 */
+        .project-details img {
+            width: 200px; /* 调整图片宽度 */
+            height: auto;
+            border-radius: 10px;
+        }
+        .project-details .text {
+            color: hsl(0, 0%, 100%);
             font-size: 20px;
             line-height: 1.6;
-            max-width: 100%; /* 防止溢出 */
-            white-space: nowrap; /* 保证每段文字一行显示 */
+            white-space: nowrap;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
         }
         footer h2 {
             margin: 10px 0;
@@ -65,12 +70,15 @@
     </header>
     <div class="content">
         <div class="project-details">
-            <div class="line">姓名：王李超</div>
-            <div class="line">一看就是男的</div>
-            <div class="line">广涉猎而不精</div>
-            <div class="line">现在正在被学习折磨</div>
-            <div class="line">暂时还没有项目在做</div>
-            <div class="line">若想看我写的代码请移步<a href="web/github.html">Github</a></div>
+            <img src="../images/experience.jpg" alt="个人照片">
+            <div class="text">
+                <p>姓名：王李超</p>
+                <p>一看就是男的</p>
+                <p>广涉猎而不精</p>
+                <p>现在正在被学习折磨</p>
+                <p>暂时还没有项目在做</p>
+                <p>若想看我写的代码请移步<a href="web/github.html">Github</a></p>
+            </div>
         </div>
     </div>
     <footer>
